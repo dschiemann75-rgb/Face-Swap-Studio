@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom 32-column grid utility */
+.grid-cols-32 {
+  grid-template-columns: repeat(32, minmax(0, 1fr));
+}
+
+/* Custom pixelated scaling style for Step 4 blurry preview */
+.pixelated {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}

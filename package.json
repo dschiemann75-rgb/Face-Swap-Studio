@@ -1,0 +1,43 @@
+{
+  "name": "dynasync-face-swap-studio",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "dist": "npm run build && electron-builder"
+  },
+  "build": {
+    "appId": "com.dynasync.faceswap",
+    "productName": "Dynasync Face Swap Studio",
+    "copyright": "© 2026 dynsync.de",
+    "files": [
+      "dist/**/*",
+      "main.js",
+      "package.json"
+    ],
+    "win": {
+      "target": ["nsis"]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.1",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.3",
+    "electron": "^42.5.0",
+    "electron-builder": "^26.15.3"
+  },
+  "dependencies": {
+    "lucide-react": "^1.21.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  }
+}

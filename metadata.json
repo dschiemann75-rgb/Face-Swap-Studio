@@ -1,0 +1,6 @@
+{
+  "name": "Deepfake-Wirkungsweise",
+  "description": "Eine interaktive, visuelle Lernplattform zur Funktionsweise moderner Face-Swap- und Deepfake-Technologien verständlich erklärt.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
